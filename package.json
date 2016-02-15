@@ -22,7 +22,7 @@
     "three": "^0.72.0"
   },
   "scripts": {
-    "build": "browserify js/app.js -t [ babelify --presets [es2015 react] --plugins [transform-class-properties] ] --debug | exorcist lib/index.js.map | uglifyjs -c > lib/index.js"
+    "build": "browserify src/parsed_model.js -t [ babelify --presets [es2015 react] --plugins [transform-class-properties] ] --debug | exorcist lib/index.js.map | uglifyjs -c > lib/index.js"
   },
   "main": "lib/index.js",
   "repository": {
