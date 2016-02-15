@@ -20,6 +20,6 @@
   "main": "parsed_model.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tweedegolf/parsed_model.git"
+    "url": "git://github.com/tweedegolf/parsed-model.git"
   }
 }
