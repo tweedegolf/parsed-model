@@ -3,13 +3,10 @@ import ColladaLoader from './ColladaLoader';
 
 export default class ParsedModel{
 
-  constructor(model, settings){
+  constructor(settings){
     this._colladaLoader = new THREE.ColladaLoader();
     this._objectLoader = new THREE.ObjectLoader();
     this._parseSettings(settings || {});
-    if(typeof model !== 'undefined' && model !== null){
-      this._parse(model);
-    }
   }
 
   _parseSettings(settings){
@@ -20,7 +17,14 @@ export default class ParsedModel{
     }
   }
 
-  _parse(model){
+  parse(model, settings){
+    if(typeof settings !== 'undefined'){
+      this._parseSettings(settings);
+    }
+    if(typeof model.traverse === 'undefined'){
+      console.error('not an instance of THREE.Object3D');
+      return;
+    }
     this.model = model;
     this.name = model.name;
     this.geometries = new Map();
