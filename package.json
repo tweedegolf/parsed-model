@@ -14,7 +14,7 @@
     "uglify": "^0.1.5"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "^0.10.x"
   },
   "dependencies": {
     "babel-polyfill": "^6.5.0",
