@@ -98,7 +98,7 @@ export default class ParsedModel{
         url,
         // success callback
         (data) => {
-          this._parse(data.scene);
+          this.parse(data.scene);
           resolve();
         },
         // progress callback
@@ -121,7 +121,7 @@ export default class ParsedModel{
         url,
         // success callback
         (data) => {
-          this._parse(data);
+          this.parse(data);
           resolve();
         },
         // progress callback
