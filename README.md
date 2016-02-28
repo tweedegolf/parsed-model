@@ -1,6 +1,6 @@
 ### Loading 3D models into React applications
 
-This code makes it easier to import existing 3D-models into applications made with react-three or react-three-renderer. It consists of 3 files:
+This code makes it easier to create React components from imported 3D-models. To be used in applications using react-three or react-three-renderer and Three.js. It consists of 3 files:
 
  - `parsed_model.js`: contains the class ParsedModel, the main code.
  - `create_material.js`: converts THREE.Material instances to react-three-renderer components, needs to be extended with more types of material which is fairly straight-forward. This file is only needed in projects that use react-three-renderer.
