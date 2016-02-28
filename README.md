@@ -1,4 +1,4 @@
-### Loading 3D models in React applications
+### Loading 3D models into React applications
 
 This code makes it easier to import existing 3D-models into applications made with react-three or react-three-renderer. It consists of 3 files:
 
